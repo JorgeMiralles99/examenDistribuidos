@@ -1,5 +1,5 @@
 
-
+//HOLA BUENOS DIAS
 //vinculamos cliente-servidor. Obtenemos una referencia a la app RPC
 var app=rpc("localhost","gestion_variables")
 
