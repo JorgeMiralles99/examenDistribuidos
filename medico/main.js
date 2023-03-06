@@ -1,6 +1,6 @@
 
 
-// hola esto es una prueba
+// fjeadfkdsfdsfdsf
 var seccionActual="login";
 
 
