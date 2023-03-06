@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="#">
+<html>
+    <head>
+    <meta charset ="utf8">
+    <title> Hospital UA - Gestion de vida saludable</title> 
+    <link href="practica2.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <script src =" main.js"></script>
+            <script src="rest.js"></script> <!--llamamos a la funcion rest-->
+            <h1> Hospital UA</h1>
+        </header>
+        <div id="login" class = "seccion activa"><!--Realizamos el login del médico, comprueba usuario y contraseña-->
+            <h2>Login</h2>
+            <div>Usuario:<input id="loginMedico"/></div>
+            <div> Contraseña: <input id="pass" type="password" /></div>
+            <button type="submit" onclick =" controlarAcceso()"> Entrar</button>
+
+        </div>
+        <div id="listado" class="seccion"><!--Imprime la tabla de los pacientes una vez realizas el login.-->
+            <h2> Listado de pacientes</h2>
+            <p id="bienvenida"></p>
+            <ul id="pacientes"></ul>
+            <p id="tabla"></p>
+            <p>Medico con Id: <input id="reasignar-medico-input" type="text" > <button onclick="reasignar()">Reasignar</button></p>
+            <p><button onclick="botonrecor()">Recordatorio</button></p>
+            <button onclick="botonInactivos()">Inactivos</button> 
+            <button id="agregarBut" onclick="cambiarA_agregarPac()">Agregar Paciente</button>
+            <button id="salirBut" onclick="salir()">Cerrar sesion</button>
+            <button id="obserBut" onclick="eliminarObservaciones()">Eliminar observaciones</button>
+            <button onclick="boton()">Recompensa</button> 
+            
+        </div>
+
+        <div id="agregarPaciente" class="seccion"><!--Formulario para añadir nuevo paciente.-->
+            <h3> Agregar nuevo paciente</h3>
+            <p>Rellena el siguiente formulario:</p>
+            <p>Nombre: <input id="nombreNuevoPaciente" type="text" required/></p>
+            <p> Fecha de Nacimiento:<input id="fechaNacimNuevoPaciente" type="date"/></p>
+            <label for="genero"> Genero:</label>
+            <select id="generoNuevoPaciente">
+                <option disabled = "">Selecciona una opcion.</option>
+                <option value = "Hombre">Hombre</option>
+                <option value = "Mujer">Mujer</option>
+                <option value = "Otro">Otro</option>
+            </select>
+            <p>Codigo de acceso: <input id="codigoAccesoNuevoPaciente" type ="text"required /></p>
+            <p> Observaciones: <input id="observacionesNuevoPaciente" type="text"/></p>
+        
+            <button id="agBut" onclick = "agregarPaciente()">Añadir al paciente</button>
+            <button id="eraseBut" onclick = "salirlistado()">Salir</button> 
+            
+            
+        </div>
+
+        <div id="expedientePac" class="seccion">
+            <h4>Expediente del paciente</h4>
+            <p>Estos son los datos del paciente seleccionado: </p>
+            <ul id="listadatos"></ul>
+            <h3>Modificar datos paciente</h3>
+            <p>Rellena el formulario y luego pulsa el boton 'Modificar datos paciente'</p>
+            <div id="form1">
+              <p><b>Nombre</b></p>
+              <input id="nombreNuevoPaciente2"></input>
+              <p><b>Fecha de nacimiento</b></p>
+              <input type="date" id="fechaNacimNuevoPaciente2"/>
+              <p><b>Genero</b></p>
+              <input id="generoNuevoPaciente2" ></input>
+              <p><b>Codigo de acceso</b></p>
+              <input id="codigoAccesoNuevoPaciente2"></input>
+              <p><b>Observaciones</b></p>
+              <input id="obersvacionesNuevoPaciente2"></input>
+              <br><br>
+              <p id="modificarid"></p>
+              <br><br>
+            </div>
+
+            <div id="variablesPac">
+                <h5>Variables del paciente</h5> <br>
+                <ul id="listaVariables"></ul>
+                    <p><b>Selecciona una variable para filtrar las muestras:</b></p> 
+                    <select id="listaVariables1">
+                        <option value="1">Peso</option>
+                        <option value="2">Altura</option>
+                        <option value="3">Distancia recorrida</option>
+                        <option value="4">Tiempo ejercicio</option>
+                    </select>
+                    <button onclick="Filtrar()">Filtrar</button>  <br><br>
+                <button onclick="salirlistado()">Salir</button>
+                </div>
+              </div>
+    </body>
+</html>

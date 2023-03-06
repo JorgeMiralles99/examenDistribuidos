@@ -1,0 +1,163 @@
+.seccion {display: none; }
+.activa {display: block; }
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto;
+    background:rgba(45, 68, 104, 0.986);
+}
+
+header{
+    text-align: center;
+    font-family: Roboto;
+    color: white;
+}
+
+
+
+
+
+#login{
+    background: rgba(0,0,0,.7);
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+}
+
+#codacces{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #2d70c7;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+#botoninicio{
+    background: #2d70c7;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#botoninicio:hover, #botonvolver:hover, #botonactualizar:hover, #botoncerrar:hover, #anyadirmuestra:hover, #botonsalir:hover{
+    background: rgba(14, 41, 65, 0.7);
+}
+
+#listaMuestras{
+    background: rgba(0,0,0,.7);
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+}
+
+#botonsalir{
+    background: #2d70c7;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 5px;
+}
+
+#mostrarMuestras{
+    background: rgba(0,0,0,.7);
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+}
+
+#anyadirMuestras{
+    background: #2d70c7;
+    color: #FFF;
+    border: none;
+    padding: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 5px;
+    position: center;
+    float: center;
+
+}
+#screenCompartir{
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+
+}
+
+#botonvolver, #botoncerrar , #botonactualizar{
+    background: #2d70c7;
+    color: #FFF;
+    border: none;
+    padding: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 5px;
+
+}
+
+#idVariable, #descripcion{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #2d70c7;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
