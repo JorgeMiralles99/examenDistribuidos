@@ -1,6 +1,6 @@
 
 
-
+//cambio jorge
 var seccionActual="login";
 
 
