@@ -1,6 +1,3 @@
-
-
-// dometnario facil 
 var seccionActual="login";
 
 
