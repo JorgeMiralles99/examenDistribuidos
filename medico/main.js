@@ -1,6 +1,6 @@
 
 
-
+// hola esto es una prueba
 var seccionActual="login";
 
 
